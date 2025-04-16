@@ -5,10 +5,32 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>GDraw</Title>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageId>GDraw-px-1</PackageId>
+    <Company>Gront Inc.</Company>
+    <Description>GDraw Is Framework Based Raylib For 2D and 3D Games</Description>
+    <Copyright>©Gront Inc.</Copyright>
+    <RepositoryUrl>https://github.com/ShadowSL3/GDraw</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>Library, Framework, cs</PackageTags>
+    <PackAsTool>False</PackAsTool>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Raylib-cs" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
