@@ -1,5 +1,6 @@
 ﻿using Raylib_cs;
-namespace GDraw.Graphics
+
+namespace GDraw
 {
     public static class GColor
     {

@@ -1,7 +1,8 @@
 ﻿using System;
+using System.Numerics;
 using Raylib_cs; 
 
-namespace GDraw.Core {
+namespace GDraw {
 	public class GDWindow
 	{
 		public static class Time
@@ -11,12 +12,13 @@ namespace GDraw.Core {
 			
 			public static void Update()
 			{
-				float currentFrame = Raylib.GetFPS() / 1000.0f;
-				Delta = currentFrame - lastFrame;
-				lastFrame = currentFrame;
+			    double currentFrame = Raylib.GetTime();
+
+			
 			}
 
 		}
+		
 		public static void Init(int width, int height, string title)
 		{
 			Raylib.InitWindow(width, height, title);
