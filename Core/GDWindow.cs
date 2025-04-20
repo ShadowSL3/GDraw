@@ -12,9 +12,7 @@ namespace GDraw {
 			
 			public static void Update()
 			{
-			    double currentFrame = Raylib.GetTime();
-
-			
+			   float currentFrame = Raylib.GetFrameTime();
 			}
 
 		}
