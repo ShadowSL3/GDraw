@@ -20,5 +20,5 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 9.0.x
-    - name: Run Project
-      run: dotnet run 
+    - name: Create Project
+      run: dotnet new console
