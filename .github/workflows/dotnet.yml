@@ -22,22 +22,3 @@ jobs:
         dotnet-version: 9.0.x
     - name: Run Project
       run: dotnet run 
-    - name: Install packages
-      run: dotnet add package Raylib-cs
-    - name: Install Xvfb
-      run: sudo apt-get install xvfb
-    - name: Start Xvfb
-      run: |
-        export DISPLAY=:99
-        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-    
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '9.0.x'
-
-    - name: Build and Run
-      run: dotnet run
